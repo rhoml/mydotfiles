@@ -1,0 +1,223 @@
+[core]
+        excludesfile = ~/.gitignore
+        attributesfile = ~/.gitattributes
+
+        # Treat spaces before tabs and all kinds of trailing whitespace as an error
+        # [default] trailing-space: looks for spaces at the end of a line
+        # [default] space-before-tab: looks for spaces before tabs at the beginning of a line
+        whitespace = space-before-tab,-indent-with-non-tab,trailing-space
+
+        # Make `git rebase` safer on OS X
+        # More info: <http://www.git-tower.com/blog/make-git-rebase-safe-on-osx/>
+        trustctime = false
+
+        editor = emacs
+        autocrlf = input
+
+[commit]
+        gpgsign = true
+        template = ~/.gitmessage
+
+[credential]
+        helper = /opt/boxen/bin/boxen-git-credential
+
+[github]
+        user = rhoml
+
+[hub]
+        protocol = ssh
+	host = github.com
+
+[push]
+        default = current
+        helper = /opt/boxen/bin/boxen-git-credential
+
+[user]
+        name = Rhommel Lamas
+        email = roml@rhommell.com
+        signingkey = B81DC778
+
+[pull]
+        ff = only
+
+[mergetool]
+        keepBackup = true
+
+[help]
+        autocorrect = 1
+
+[web]
+        browser = firefox
+
+[diff]
+        tool = diffuse
+        suppressBlankEmpty = true
+        mnemonicprefix = true
+        renames = copies
+
+[url "git@github.com:"]
+        insteadOf = https://github.com/
+        pushInsteadOf = "github:"
+        pushInsteadOf = "git://github.com/"
+
+[url "git@gist.github.com:"]
+        insteadOf = "gst:"
+        pushInsteadOf = "gist:"
+        pushInsteadOf = "git://gist.github.com/"
+
+[url "git://gist.github.com/"]
+        insteadOf = "gist:"
+
+[alias]
+        lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+
+        unpushed = log --branches --not --remotes --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+
+        undo = reset --hard HEAD
+
+        glog = log --all --pretty='format:%d %Cgreen%h%Creset %an - %s' --graph
+
+        contributors = shortlog --summary --numbered
+
+        st = status
+
+        s = status -s
+
+        ci = commit
+
+        co = checkout
+
+        ru = remote update
+
+        br = branch
+
+        cam = commit -a -S -m
+
+        commit = commit -S
+
+        praise = blame
+
+        staged = diff --cached
+
+        unstaged = diff
+
+        both = diff HEAD
+
+        oneline = log --oneline
+
+        amend = commit --amend
+
+        tree = log --graph --decorate --pretty=oneline --abbrev-commit --all
+
+        myhist = !git log --author="$(git config user.name)" --format=%H |xargs git show --name-only --format=-------------%n%Cred%s%Creset%n%Cblue%h%Creset
+
+        lds = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
+
+        cleanup = !git branch --merged | grep -v '*' | xargs git branch -d
+
+        pconfig = config -f .git/config
+
+        cloneurl = config --get remote.origin.url
+
+        stash-changes = stash save
+
+        unstash = stash pop --inde
+
+        stashes = stash list
+
+        delete-stash = stash drop
+
+        amend = commit --amend
+
+        amend-author = commit --amend -C HEAD --author
+
+        peeps = !git log --pretty=format:%aN --no-merges | sort | uniq -c | sort -rn
+
+        # `git spawn my-new-branch`: from https://github.com/gregschoen/awesome-git-config
+        # make new branch based on master no matter which branch is checked out
+        spawn = !sh -c 'git checkout master && git pull --rebase origin master && git checkout -b $1 ${2-master} && git config branch.$1.localmerge ${2-master}' -
+
+        unstage = reset HEAD
+
+        contributors = shortlog --summary --numbered
+
+        lg = log --color --decorate --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an (%G?)>%Creset' --abbrev-commit
+
+        snapshot = !git stash save "snapshot: $(date)" && git stash apply "stash@{0}"
+
+        # Show verbose output about tags, branches or remotes
+        tags = tag -l
+
+        branches = branch -a
+
+        remotes = remote -v
+
+        # Credit an author on the latest commit
+        credit = "!f() { git commit --amend --author \"$1 <$2>\" -C HEAD; }; f"
+
+        # Interactive rebase with the given number of latest commits
+        reb = "!r() { git rebase -i HEAD~$1; }; r"
+
+        # Find branches containing commit
+        fb = "!f() { git branch -a --contains $1; }; f"
+
+        # codereview aliases
+        puppet = codereview ecg-puppet
+
+        please = push --force-with-lease
+
+        commend = commit --amend --no-edit
+
+        it = '!git init && git commit -m "Initial commit" --allow-empty'
+
+        # Build gitignore
+	ignore = "!gi() { curl -L -s https://www.gitignore.io/api/$@ ;}; gi"
+
+	quick-stats = ! /usr/local/bin/git-quick-stats
+
+        # mystats = ! git log --author=rlamas --pretty=tformat: --numstat | awk '{ add += $1; subs += $2; loc += $1 - $2 } END { printf "added lines: %s, removed lines: %s, total lines: %s\n", add, subs, loc }' -
+
+[apply]
+
+       # Detect whitespace errors when applying a patch
+       whitespace = fix
+
+[log]
+       decorate = short
+
+[color]
+       ui = auto
+       interactive = auto
+       diff = auto
+       status = auto
+
+[color "branch"]
+       remote = yellow
+
+[color "status"]
+        added = yellow
+        changed = green
+        untracked = cyan
+
+[color "diff"]
+        meta = yellow bold
+        frag = magenta
+        plain = white bold
+        old = red bold
+        new = green bold
+        commit = yellow bold
+        func = green dim
+
+[pager]
+        status = true
+        show-branch = true
+
+[format]
+        numbered = auto
+
+[http]
+        cookiefile = ~/.gitcookies
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
