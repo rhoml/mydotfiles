@@ -16,6 +16,6 @@ iTerm2 preferences
 
 ## Colors
 
-Foreground: ffb700
-Bold: c9762c
+* Foreground: ffb700
+* Bold: c9762c
 
