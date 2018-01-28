@@ -3,3 +3,9 @@
 *.swp
 *.swo
 *~
+
+# Unwanted directories
+
+.emacs.d/**
+.tmux/**
+.oh-my-zsh/**
