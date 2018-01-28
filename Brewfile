@@ -42,6 +42,7 @@ brew 'vagrant-completion'
 brew 'wget'
 brew 'xz'
 brew 'zsh'
+
 cask '1password'
 cask 'firefox'
 cask 'google-chrome'
