@@ -35,7 +35,7 @@
 [user]
         name = Rhommel Lamas
         email = roml@rhommell.com
-        signingkey = B81DC778
+        signingkey = A2FE743B
 
 [pull]
         ff = only
