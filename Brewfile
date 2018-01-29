@@ -50,3 +50,6 @@ cask 'transmission'
 cask 'tunnelbear'
 cask 'vlc'
 cask 'keybase'
+cask 'emacs'
+cask 'consul-cli'
+
