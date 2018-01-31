@@ -376,12 +376,16 @@ you should place your code here."
         rcirc-default-nick "rhoml"
         rcirc-default-full-name "Rhommel Lamas")
 
+  (setq rcirc-default-use-tls t)
+
   (setq rcirc-auto-authenticate-flag t)
 
   (setq rcirc-server-alist
         '(("chat.freenode.net"
            :port 6697
-           :connect-function open-tls-stream
+           :use-tls t
+           :encryption tls
+           :custom-connect-function open-tls-stream
            :channels ("#puppet"
                       "#puppet-dev"
                       "#logstash"
