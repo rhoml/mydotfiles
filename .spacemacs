@@ -372,13 +372,16 @@ you should place your code here."
   ;; When a TODO item enters DONE, add a CLOSED: property with current date-time stamp
   (setq org-log-done 'time)
   ;; Setting rcirc. We rely on ~/.authinfo.gpg to store credentials
+  (setq rcirc-default-user-name "rhoml"
+        rcirc-default-nick "rhoml"
+        rcirc-default-full-name "Rhommel Lamas")
+
+  (setq rcirc-auto-authenticate-flag t)
+
   (setq rcirc-server-alist
         '(("irc.freenode.net"
-           :user-name "spacemacs_user"
            :port 6697
-           :nick "rhoml"
-           :rcirc-default-nick "rhoml"
-           :full-name "Rhommel Lamas"
+           :connect-function open-tls-stream
            :channels ("#puppet"
                       "#puppet-dev"
                       "#logstash"
@@ -393,13 +396,16 @@ you should place your code here."
                       "#consul"
                       "#go-nuts"
                       "#kubernetes-dev"))))
+
+  (setq rcirc-prompt "»» "
+        rcirc-time-format "%Y-%m-%d %H:%M "
+        rcirc-fill-flag nil)
+
   (setq rcirc-omit-responses '("JOIN"
                                "PART"
                                "QUIT"
                                "NICK"
                                "AWAY"))
-
-  (setq rcirc-time-format "%Y-%m-%d %H:%M ")
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
