@@ -379,7 +379,7 @@ you should place your code here."
   (setq rcirc-auto-authenticate-flag t)
 
   (setq rcirc-server-alist
-        '(("irc.freenode.net"
+        '(("chat.freenode.net"
            :port 6697
            :connect-function open-tls-stream
            :channels ("#puppet"
