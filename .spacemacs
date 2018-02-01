@@ -39,12 +39,13 @@ values."
      ;; colors
      dash
      docker
+     emacs-lisp
      go
      helm
      html
-     osx
      lua
      markdown
+     osx
      puppet
      python
      ruby
@@ -55,10 +56,9 @@ values."
      sql
      syntax-checking
      terraform
-     tmux
      themes-megapack
+     tmux
      yaml
-     emacs-lisp
      ;; Layers with customizations
      (auto-completion :variables
                       auto-completion-enable-help-tooltip t
