@@ -11,7 +11,7 @@ brew 'ack'
 brew 'aurora-cli'
 brew 'autoconf'
 brew 'coreutils'
-brew 'dnsmasq'
+brew 'dnsmasq', restart_service: :changed
 brew 'emacs-plus'
 brew 'findutils'
 brew 'gcc@5'
