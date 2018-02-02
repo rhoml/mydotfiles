@@ -49,7 +49,6 @@ brew 'xz'
 brew 'zsh'
 brew 'zsh-completions'
 
-cask '1password'
 cask 'backblaze'
 cask 'consul-cli'
 cask 'dayone-cli'
@@ -73,3 +72,5 @@ cask 'tunnelbear'
 cask 'vagrant'
 cask 'virtualbox'
 cask 'vlc'
+
+mas '1password'
