@@ -73,4 +73,4 @@ cask 'vagrant'
 cask 'virtualbox'
 cask 'vlc'
 
-mas '1password'
+mas "1Password", id: 568903335
