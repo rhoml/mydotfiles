@@ -1,0 +1,27 @@
+[DEFAULT]
+git_gc = git gc "$@"
+
+[Development/rhoml/mydotfiles]
+checkout = git clone 'git@github.com:rhoml/mydotfiles.git' 'mydotfiles'
+update = git pull --rebase
+
+[Development/rhoml/homebrew-cask]
+checkout = git clone 'git@github.com:rhoml/homebrew-cask.git' 'homebrew-cask'
+update = git pull --rebase
+
+[Development/rhoml/spacemacs]
+checkout =
+    git clone git@github.com:rhoml/spacemacs.git
+    cd spacemacs
+    git remote add upstream https://github.com/syl20bnr/spacemacs.git
+
+update = git pull --rebase
+
+zap =
+    git pull upstream
+    git merge upstream/master
+    git push origin master
+
+#[Development/rhoml/tf_my_terraform_stuff]
+#checkout = git clone 'git@github.com:rhoml/tf_my_terraform_stuff.git' 'tf_my_terraform_stuff'
+#update = git pull --rebase
