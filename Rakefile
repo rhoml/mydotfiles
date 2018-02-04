@@ -7,6 +7,7 @@ WHOAMI = ENV['USER']
 DOTFILES_DIR = "/Users/#{WHOAMI}/.dotfiles"
 BACKUP_DIR = "/Users/#{WHOAMI}/.dotfiles-backup"
 DOTFILES = %w(
+  Brewfile
   curlrc
   dockerignore
   gemrc
