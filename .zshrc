@@ -3,7 +3,7 @@
 # zmodload zsh/zprof
 
 # Path to your oh-my-zsh configuration.
-export PATH="/usr/local/opt/coreutils/libexec/gnubin:/Users/rlamas/bin:/Users/rlamas/.oh-my-zsh/bin:$GOPATH/bin:$PATH"
+export PATH="/usr/local/opt/coreutils/libexec/gnubin:/Users/$USER/bin:/Users/rlamas/.oh-my-zsh/bin:$GOPATH/bin:$PATH"
 export ZSH=$HOME/.oh-my-zsh
 export TERM="xterm-256color"
 
@@ -56,7 +56,7 @@ done
 
 # initialize autocomplete here, otherwise functions won't be loaded
 autoload -U compinit
-compinit
+compinit -D ~/Users/$USER/.zcompdump
 
 # load every completion after autocomplete loads
 for file in ${(M)config_files:#*/completion.zsh}
@@ -70,16 +70,12 @@ unset config_files
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git         \
-         gitignore   \
          battery     \
-         ant         \
          extract     \
          osx         \
          go          \
          rbenv       \
-         emacs       \
          bgnotify    \
-         cloudapp    \
          copydir     \
          copybuffer  \
          copyfile    \
@@ -87,11 +83,7 @@ plugins=(git         \
          docker      \
          docker-compose \
          emoji       \
-         git         \
-         git-flow    \
-         git-hubflow \
          github      \
-         gitignore   \
          golang      \
          jira        \
          jsontools   \

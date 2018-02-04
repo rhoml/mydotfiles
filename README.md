@@ -15,7 +15,7 @@ FIXME: No manual steps please.
 ~#: git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ~#: git clone git@github.com:rhoml/mydotfiles.git ~/my/dotfiles
 ~#: cd ~/my/dotfiles
-~#: brew bundle install
+~#: brew bundle install -v --global
 ```
 
 Assumptions
