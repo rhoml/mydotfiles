@@ -3,9 +3,12 @@
 *.swp
 *.swo
 *~
+known_hosts
 
 # Unwanted directories
-
 .emacs.d/**
 .tmux/**
 .oh-my-zsh/**
+
+# Protect your keys
+id_ed*
