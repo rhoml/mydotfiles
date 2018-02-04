@@ -9,6 +9,7 @@ Before you start
 FIXME: No manual steps please.
 
 ```shell
+~#: git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 ~#: /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ~#: brew install zsh zsh-completions brew-cask
 ~#: git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
