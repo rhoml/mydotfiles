@@ -74,12 +74,10 @@ plugins=(git         \
          battery     \
          ant         \
          extract     \
-         # heroku      \
          osx         \
          go          \
          rbenv       \
          emacs       \
-         #aws         \
          bgnotify    \
          cloudapp    \
          copydir     \
@@ -98,7 +96,8 @@ plugins=(git         \
          jira        \
          jsontools   \
          terraform   \
-         branch
+         branch      \
+         dotenv
 )
 
 [ -f $ZSH/oh-my-zsh.sh ] && source $ZSH/oh-my-zsh.sh
