@@ -1,6 +1,5 @@
 cask_args appdir: '/Applications'
 
-tap 'd12frosted/emacs-plus'
 tap 'homebrew/bundle'
 tap 'homebrew/completions'
 tap 'homebrew/core'
@@ -15,7 +14,6 @@ brew 'brew-cask-completion'
 brew 'curl'
 brew 'coreutils'
 brew 'dnsmasq', restart_service: :changed
-brew 'emacs-plus'
 brew 'findutils'
 brew 'gcc@5'
 brew 'gdbm'
