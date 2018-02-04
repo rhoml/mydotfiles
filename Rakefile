@@ -21,6 +21,7 @@ DOTFILES = %w(
   tmux.conf
   wgetrc
   zprofile
+  zsh.d
   zshrc
 )
 
