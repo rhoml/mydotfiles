@@ -1,0 +1,6 @@
+vault_env() {
+  local vault_env=$1
+  if [ -f $HOME/.vault.d/$vault_env ]; then
+    . $HOME/.vault.d/$vault_env
+  fi
+}

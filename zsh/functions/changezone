@@ -1,0 +1,5 @@
+changezone() {
+  local aws_region=$1
+    export EC2_REGION=$aws_region
+    export AWS_REGION=$aws_region
+}
