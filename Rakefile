@@ -10,6 +10,7 @@ DOTFILES = %w(
   curlrc
   dockerignore
   gemrc
+  gitignore
   gitconfig
   gitcookies
   gitmessage
