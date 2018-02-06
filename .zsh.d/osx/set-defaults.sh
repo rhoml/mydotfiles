@@ -38,6 +38,9 @@ defaults write -g com.apple.mouse.tapBehavior -int 1
 # Show drives All
 defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
 defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
+defaults write com.apple.finder ShowHardDrivesOnDesktop -bool true
+defaults write com.apple.finder AppleShowAllFiles -bool true
+defaults write com.apple.finder ShowMountedServersOnDesktop -bool true
 
 # Empty trash securely
 defaults write com.apple.finder EmptyTrashSecurely -bool true
