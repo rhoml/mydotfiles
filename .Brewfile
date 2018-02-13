@@ -51,6 +51,7 @@ brew 'wget'
 brew 'xz'
 brew 'zsh'
 brew 'zsh-completions'
+brew 'python'
 
 cask 'backblaze'
 cask 'consul-cli'
@@ -77,5 +78,6 @@ cask 'tunnelbear'
 cask 'vagrant'
 cask 'virtualbox'
 cask 'vlc'
+cask 'viscosity'
 
 mas "1Password", id: 568903335
