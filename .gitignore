@@ -53,3 +53,4 @@ Thumbs.db
 #####################
 known_hosts
 id_ed*
+.pre-commit-config.yaml
