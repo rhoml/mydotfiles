@@ -13,6 +13,7 @@ brew 'autoconf'
 brew 'bash-completion'
 brew 'brew-cask-completion'
 brew 'coreutils'
+brew 'ctop'
 brew 'curl'
 brew 'dnsmasq', restart_service: :changed
 brew 'findutils'
