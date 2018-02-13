@@ -18,9 +18,6 @@
         gpgsign = true
         template = ~/.gitmessage
 
-[credential]
-        helper = /opt/boxen/bin/boxen-git-credential
-
 [github]
         user = rhoml
 
