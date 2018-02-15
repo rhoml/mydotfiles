@@ -55,3 +55,7 @@ known_hosts
 id_ed*
 id_rsa*
 .pre-commit-config.yaml
+ 
+# Particular location files #
+#############################
+.mrconfig
