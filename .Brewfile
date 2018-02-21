@@ -59,6 +59,7 @@ brew 'zsh'
 brew 'zsh-completions'
 brew 'python'
 
+cask 'agenda'
 cask 'backblaze'
 cask 'consul-cli'
 cask 'dayone-cli'
