@@ -34,6 +34,7 @@ brew 'kubeval'
 brew 'libmpc'
 brew 'libressl'
 brew 'makedepend'
+brew 'mas'
 brew 'mpfr'
 brew 'mr'
 brew 'nginx'
@@ -86,3 +87,4 @@ cask 'virtualbox'
 cask 'vlc'
 cask 'viscosity'
 
+mas 'day-one', id: 1055511498
