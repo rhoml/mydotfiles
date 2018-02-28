@@ -3,7 +3,7 @@
 # zmodload zsh/zprof
 
 # Path to your oh-my-zsh configuration.
-export PATH="/usr/local/opt/coreutils/libexec/gnubin:/Users/$USER/bin:/Users/rlamas/.oh-my-zsh/bin:$GOPATH/bin:$PATH"
+export PATH="/usr/local/opt/coreutils/libexec/gnubin:/Users/$USER/bin:/Users/rlamas/.oh-my-zsh/bin:/Users/rlamas/go/bin:$PATH"
 export ZSH=$HOME/.oh-my-zsh
 export TERM="xterm-256color"
 

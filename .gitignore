@@ -37,7 +37,6 @@ Icon?
 Thumbs.db
 /bin/
 .bundle
-/vendor/
 **/tmp-build/**
 **/tmp-dest/**
 **/cache/**
