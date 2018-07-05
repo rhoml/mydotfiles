@@ -1,0 +1,24 @@
+-   repo: git://github.com/pre-commit/pre-commit-hooks
+    sha: v1.2.3
+    hooks:
+    -   id: trailing-whitespace
+    -   id: check-yaml
+    -   id: check-json
+    -   id: check-xml
+    -   id: forbid-new-submodules
+    -   id: check-added-large-files
+    -   id: check-merge-conflict
+    -   id: end-of-file-fixer
+-   repo: git://github.com/chriskuehl/puppet-pre-commit-hooks
+    sha: v2.0.1
+    hooks:
+    -   id: puppet-validate
+        additional_dependencies: ['puppet:3.8.7']
+    -   id: erb-validate
+    -   id: epp-validate
+    -   id: puppet-lint
+        args:
+        -   --fail-on-warnings
+        -   --no-80chars-check
+        -   --no-documentation-check
+        -   --no-puppet_url_without_modules-check

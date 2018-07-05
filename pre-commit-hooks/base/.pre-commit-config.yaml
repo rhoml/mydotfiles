@@ -1,0 +1,11 @@
+-   repo: git://github.com/pre-commit/pre-commit-hooks
+    sha: v1.2.3
+    hooks:
+    -   id: trailing-whitespace
+    -   id: check-yaml
+    -   id: check-json
+    -   id: check-xml
+    -   id: forbid-new-submodules
+    -   id: check-added-large-files
+    -   id: check-merge-conflict
+    -   id: end-of-file-fixer
