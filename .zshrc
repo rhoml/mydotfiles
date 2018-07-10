@@ -89,13 +89,13 @@ plugins=(git         \
          jsontools   \
          terraform   \
          branch      \
-         kube-ps1    \
+         # kube-ps1    \
          dotenv
 )
 
 [ -f $ZSH/oh-my-zsh.sh ] && source $ZSH/oh-my-zsh.sh
 
-[ -f $ZSH/plugins/kube-ps1/kube-ps1.zsh ] && source $ZSH/plugins/kube-ps1/kube-ps1.zsh
+# [ -f $ZSH/plugins/kube-ps1/kube-ps1.zsh ] && source $ZSH/plugins/kube-ps1/kube-ps1.zsh
 
 # added by travis gem
 [ -f /Users/rlamas/.travis/travis.sh ] && source /Users/rlamas/.travis/travis.sh
