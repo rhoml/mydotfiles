@@ -71,6 +71,7 @@ brew 'xz'
 brew 'zsh'
 brew 'zsh-completions'
 brew 'python'
+brew 'watch'
 
 cask 'agenda'
 cask 'backblaze'
