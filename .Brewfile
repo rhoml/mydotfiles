@@ -1,11 +1,13 @@
 cask_args appdir: '/Applications'
 
 tap 'caskroom/cask'
+tap 'homebrew/cask-drivers'
 tap 'garethr/kubeval'
 tap 'homebrew/bundle'
 tap 'homebrew/core'
 tap 'goreleaser/tap'
 tap 'fullscreen/tap'
+tap 'rcmdnk/file'
 
 brew 'ack'
 brew 'ag'
@@ -96,3 +98,4 @@ cask 'virtualbox'
 cask 'vlc'
 cask 'viscosity'
 cask 'cloudapp'
+cask 'sonos'
