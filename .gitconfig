@@ -27,7 +27,6 @@
 
 [push]
         default = current
-        helper = /opt/boxen/bin/boxen-git-credential
 
 [user]
         name = Rhommel Lamas
