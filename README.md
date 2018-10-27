@@ -3,20 +3,15 @@ mydotfiles
 
 This is a collection of my dotfiles
 
-Before you start
+Usage
 ===
 
-FIXME: No manual steps please.
+There is a bootstrap shellscript that will install all your dependencies.
 
-```shell
-~#: git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
-~#: /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-~#: brew install zsh zsh-completions brew-cask
-~#: git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
-~#: git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-~#: git clone git@github.com:rhoml/mydotfiles.git ~/my/dotfiles
-~#: cd ~/my/dotfiles
-~#: brew bundle install -v --global
+```
+git clone git@github.com:rhoml/mydotfiles.git ~/.dotfiles
+cd ~/.dotfiles
+./bootstrap.sh
 ```
 
 Assumptions
@@ -34,5 +29,3 @@ iTerm2 preferences
 
 * Foreground: ffb700
 * Bold: c9762c
-
-
