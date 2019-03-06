@@ -41,4 +41,7 @@ bash $TMUX_TPM_DIR/bin/install_plugins
 echo "Installing all dependencies via Homebrew..."
 /usr/local/bin/brew bundle install -v --global
 
+# Set zsh as the default shell
+chsh -s /bin/zsh
+
 echo "Done."
