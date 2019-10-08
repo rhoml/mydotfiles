@@ -34,14 +34,14 @@ fi
 echo "Installing all dotfiles"
 /usr/bin/rake link
 
-echo "Installing tmux plugins..."
-bash $TMUX_TPM_DIR/bin/install_plugins
-
 # Install Homebrew dependencies
 echo "Installing all dependencies via Homebrew..."
 /usr/local/bin/brew bundle install -v --global
 
 # Set zsh as the default shell
 chsh -s /bin/zsh
+
+echo "Installing tmux plugins..."
+bash $TMUX_TPM_DIR/bin/install_plugins
 
 echo "Done."

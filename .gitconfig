@@ -20,6 +20,7 @@
 
 [github]
         user = rhoml
+	oauth-token = 7215a565fd2b775d73245347bf809649947c0057
 
 [hub]
         protocol = ssh
