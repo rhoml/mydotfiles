@@ -157,9 +157,6 @@
         # Find branches containing commit
         fb = "!f() { git branch -a --contains $1; }; f"
 
-        # codereview aliases
-        puppet = codereview ecg-puppet
-
         please = push --force-with-lease
 
         commend = commit --amend --no-edit
