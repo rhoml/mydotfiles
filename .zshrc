@@ -100,3 +100,5 @@ plugins=(git         \
 
 # added by travis gem
 [ -f /Users/rlamas/.travis/travis.sh ] && source /Users/rlamas/.travis/travis.sh
+
+eval "$(rbenv init -)"
