@@ -135,4 +135,16 @@ defaults write ~/Library/Preferences/.GlobalPreferences CGDisableCursorLocationM
 # Disable screenshot preview
 defaults write com.apple.screencapture show-thumbnail -bool FALSE
 
+# Disable auto-correct
+defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
+
+# System - Automatically restart if system freezes
+systemsetup -setrestartfreeze on
+
+printf "%s\n" "Bluetooth - Increase sound quality for headphones/headsets."
+defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
+
+printf "%s\n" "Game Center - Disable Game Center."
+defaults write com.apple.gamed Disabled -bool true
+
 /usr/bin/killall Dock
