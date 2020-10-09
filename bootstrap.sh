@@ -10,7 +10,7 @@ TMUX_TPM_DIR="/Users/${WHOAMI}/.tmux/plugins/tpm"
 # Validate .emacs.d is present if not clone spacemacs
 if [ ! -d ${SPACEMACS_DIR} ]; then
     echo "Installing Spacemacs..."
-    git clone https://github.com/syl20bnr/spacemacs ${SPACEMACS_DIR}
+    git clone git@github.com:syl20bnr/spacemacs.git ${SPACEMACS_DIR}
 fi
 
 # Validate Homebrew is installed

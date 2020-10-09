@@ -132,4 +132,7 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 # Disable shake to find cursor
 defaults write ~/Library/Preferences/.GlobalPreferences CGDisableCursorLocationMagnification -bool YES
 
+# Disable screenshot preview
+defaults write com.apple.screencapture show-thumbnail -bool FALSE
+
 /usr/bin/killall Dock

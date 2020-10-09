@@ -4,6 +4,7 @@
 
 # Path to your oh-my-zsh configuration.
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:/Users/$USER/bin:/Users/rlamas/.oh-my-zsh/bin:/Users/rlamas/go/bin:~/bin/terraform:$PATH"
+export ZSH_DISABLE_COMPFIX=false
 export ZSH=$HOME/.oh-my-zsh
 export TERM="xterm-256color"
 
@@ -84,7 +85,6 @@ plugins=(git         \
          docker-compose \
          emoji       \
          github      \
-         golang      \
          jira        \
          jsontools   \
          terraform   \
