@@ -6,6 +6,7 @@ WHOAMI=$(whoami)
 SPACEMACS_DIR="/Users/${WHOAMI}/.emacs.d"
 OH_MY_ZSH_DIR="/Users/${WHOAMI}/.oh-my-zsh"
 TMUX_TPM_DIR="/Users/${WHOAMI}/.tmux/plugins/tpm"
+ZSH_CUSTOM_THEMES_DIR="/Users/${WHOAMI}/.oh-my-zsh/custom/themes/powerlevel9k"
 
 # Validate .emacs.d is present if not clone spacemacs
 if [ ! -d ${SPACEMACS_DIR} ]; then
@@ -23,6 +24,12 @@ fi
 if [ ! -d ${OH_MY_ZSH_DIR} ]; then
     echo "Installing oh-my-zsh..."
     git clone git://github.com/robbyrussell/oh-my-zsh.git ${OH_MY_ZSH_DIR}
+fi
+
+# Validate .oh-my-zsh custom theme is present
+if [ ! -d ${ZSH_CUSTOM_THEMES_DIR} ]; then
+    echo "Installing custom theme..."
+    git clone git@github.com:Powerlevel9k/powerlevel9k.git ${ZSH_CUSTOM_THEMES_DIR}
 fi
 
 # Validate TMUX TPM is present
