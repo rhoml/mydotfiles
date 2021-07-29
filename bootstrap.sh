@@ -44,4 +44,7 @@ chsh -s /bin/zsh
 echo "Installing tmux plugins..."
 bash $TMUX_TPM_DIR/bin/install_plugins
 
+echo "Creating directory tree for Development..."
+/usr/bin/rake working_dir
+
 echo "Done."
