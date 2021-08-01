@@ -3,7 +3,7 @@
 # zmodload zsh/zprof
 
 # Path to your oh-my-zsh configuration.
-export PATH="/usr/local/opt/coreutils/libexec/gnubin:/usr/local/opt/curl/bin:/Users/$USER/bin:/Users/rlamas/.oh-my-zsh/bin:/Users/rlamas/go/bin:~/bin/terraform:$PATH"
+export PATH="/usr/local/opt/coreutils/libexec/gnubin:/usr/local/opt/curl/bin:/Users/$USER/bin:/Users/$USER/.oh-my-zsh/bin:/Users/$USER/go/bin:~/bin/terraform:$PATH"
 export ZSH_DISABLE_COMPFIX=false
 export ZSH=$HOME/.oh-my-zsh
 export TERM="xterm-256color"
