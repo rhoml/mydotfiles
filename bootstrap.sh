@@ -7,6 +7,8 @@ SPACEMACS_DIR="/Users/${WHOAMI}/.emacs.d"
 OH_MY_ZSH_DIR="/Users/${WHOAMI}/.oh-my-zsh"
 TMUX_TPM_DIR="/Users/${WHOAMI}/.tmux/plugins/tpm"
 ZSH_CUSTOM_THEMES_DIR="/Users/${WHOAMI}/.oh-my-zsh/custom/themes/powerlevel9k"
+FONTS_CUSTOM_DIR="/Users/${WHOAMI}/.dotfiles/fonts"
+FONTS_LOCAL_DIR="/Users/${WHOAMI}/Library/Fonts"
 
 # Validate .emacs.d is present if not clone spacemacs
 if [ ! -d ${SPACEMACS_DIR} ]; then
@@ -53,5 +55,8 @@ bash $TMUX_TPM_DIR/bin/install_plugins
 
 echo "Creating directory tree for Development..."
 /usr/bin/rake working_dir
+
+echo "Installing fonts..."
+cp ${FONTS_CUSTOM_DIR}/*.{otf,ttf} ${FONTS_LOCAL_DIR}/
 
 echo "Done."
