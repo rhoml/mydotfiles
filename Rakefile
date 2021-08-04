@@ -30,6 +30,7 @@ DOTFILES = %w(
   zprofile
   zsh.d
   zshrc
+  hammerspoon
 )
 
 desc %(Make symlinks of dotfiles)
