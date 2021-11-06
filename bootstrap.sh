@@ -45,7 +45,7 @@ echo "Installing all dotfiles"
 
 # Install Homebrew dependencies
 echo "Installing all dependencies via Homebrew..."
-/usr/local/bin/brew bundle install -v --global
+/opt/homebrew/bin/brew bundle install -v --global
 
 # Set zsh as the default shell
 chsh -s /bin/zsh

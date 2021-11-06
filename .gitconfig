@@ -131,7 +131,7 @@
 
         # `git spawn my-new-branch`: from https://github.com/gregschoen/awesome-git-config
         # make new branch based on master no matter which branch is checked out
-        spawn = !sh -c 'git checkout master && git pull --rebase origin master && git checkout -b $1 ${2-master} && git config branch.$1.localmerge ${2-master}' -
+        spawn = !sh -c 'git checkout main && git pull --rebase origin main && git checkout -b $1 ${2-main} && git config branch.$1.localmerge ${2-main}' -
 
         unstage = reset HEAD
 
