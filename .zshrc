@@ -83,7 +83,7 @@ plugins=(
   golang
   jsontools
   kubectl
-  osx
+  macos
   rbenv
   sudo
 )
