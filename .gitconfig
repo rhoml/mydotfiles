@@ -215,7 +215,9 @@
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
 	required = true
+
 [remote "origin"]
 	prune = true
+
 [init]
 	defaultBranch = main
