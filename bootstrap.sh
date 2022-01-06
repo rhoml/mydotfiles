@@ -7,6 +7,7 @@ SPACEMACS_DIR="/Users/${WHOAMI}/.emacs.d"
 OH_MY_ZSH_DIR="/Users/${WHOAMI}/.oh-my-zsh"
 TMUX_TPM_DIR="/Users/${WHOAMI}/.tmux/plugins/tpm"
 ZSH_CUSTOM_THEMES_DIR="/Users/${WHOAMI}/.oh-my-zsh/custom/themes/powerlevel9k"
+ZSH_CUSTOM_PLUGINS_DIR="/Users/${WHOAMI}/.oh-my-zsh/custom/plugins"
 FONTS_CUSTOM_DIR="/Users/${WHOAMI}/.dotfiles/fonts"
 FONTS_LOCAL_DIR="/Users/${WHOAMI}/Library/Fonts"
 
@@ -32,6 +33,12 @@ fi
 if [ ! -d ${ZSH_CUSTOM_THEMES_DIR} ]; then
     echo "Installing custom theme..."
     git clone git@github.com:Powerlevel9k/powerlevel9k.git ${ZSH_CUSTOM_THEMES_DIR}
+fi
+
+# Validate .oh-my-zsh custom plugins is present
+if [ ! -d ${ZSH_CUSTOM_PLUGINS_DIR} ]; then
+    echo "Installing custom plugins..."
+    git clone git@github.com:mroth/evalcache.git ${ZSH_CUSTOM_PLUGINS_DIR}
 fi
 
 # Validate TMUX TPM is present
