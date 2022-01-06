@@ -3,13 +3,19 @@
 # zmodload zsh/zprof
 
 # Path to your oh-my-zsh configuration.
-export PATH="/usr/local/opt/coreutils/libexec/gnubin:/usr/local/opt/curl/bin:/Users/$USER/bin:/Users/$USER/.oh-my-zsh/bin:/Users/$USER/go/bin:~/bin/terraform:/opt/homebrew/Cellar/bind/9.16.23/bin:$HOME/.gem/ruby/3.0.0/bin:/Users/$USER/.cargo/bin:$PATH"
+export PATH="/usr/local/opt/coreutils/libexec/gnubin:/usr/local/opt/curl/bin:/Users/$USER/bin:/Users/$USER/.oh-my-zsh/bin:/Users/$USER/go/bin:~/bin/terraform:/opt/homebrew/Cellar/bind/9.16.23/bin:/opt/homebrew/bin:$HOME/.gem/ruby/3.0.0/bin:/Users/$USER/.cargo/bin:$PATH"
 export ZSH_DISABLE_COMPFIX=false
 export ZSH=$HOME/.oh-my-zsh
 export TERM="xterm-256color"
 export LDFLAGS="-L/usr/local/opt/curl/lib"
 export CPPFLAGS="-I/usr/local/opt/curl/include"
+
 export CARGO_NET_GIT_FETCH_WITH_CLI=true
+
+export NVM_DIR="$HOME/.nvm"
+
+# Enable Rbenv for Rubies!
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
 
 # Manage NVM
 export NVM_LAZY_LOAD=true
@@ -127,22 +133,17 @@ POWERLEVEL9K_BATTERY_LOW_COLOR="red"
 
 [ -f $ZSH/oh-my-zsh.sh ] && source $ZSH/oh-my-zsh.sh
 
-# Enable Rbenv for Rubies!
-export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
-
-_evalcache rbenv init -
-# eval "$(rbenv init -)"
-
-export NVM_DIR="$HOME/.nvm"
-
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
 # Perf improvements
 #eval "$(rbenv init -)"
 _evalcache rbenv init -
 
 eval "$(direnv hook zsh)"
 #_evalcache direnv hook zsh
-_evalcache /usr/local/bin/brew shellenv
-#eval "$(/usr/local/bin/brew shellenv)"
+_evalcache /opt/homebrew/bin/brew shellenv
+#eval "$(/opt/homebrew/bin/brew shellenv)"
+
+_evalcache rbenv init -
+# eval "$(rbenv init -)"
+
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
