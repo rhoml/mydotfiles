@@ -11,6 +11,9 @@ export LDFLAGS="-L/usr/local/opt/curl/lib"
 export CPPFLAGS="-I/usr/local/opt/curl/include"
 export CARGO_NET_GIT_FETCH_WITH_CLI=true
 
+export NVM_LAZY_LOAD=true
+export NVM_COMPLETION=true
+
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -125,6 +128,10 @@ POWERLEVEL9K_BATTERY_LOW_COLOR="red"
 
 # Enable Rbenv for Rubies!
 export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
+
+_evalcache rbenv init -
+# eval "$(rbenv init -)"
+
 export NVM_DIR="$HOME/.nvm"
 
 # Manage NVM
@@ -140,3 +147,5 @@ _evalcache rbenv init -
 
 eval "$(direnv hook zsh)"
 #_evalcache direnv hook zsh
+_evalcache /usr/local/bin/brew shellenv
+#eval "$(/usr/local/bin/brew shellenv)"
