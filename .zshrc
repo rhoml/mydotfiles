@@ -11,6 +11,7 @@ export LDFLAGS="-L/usr/local/opt/curl/lib"
 export CPPFLAGS="-I/usr/local/opt/curl/include"
 export CARGO_NET_GIT_FETCH_WITH_CLI=true
 
+# Manage NVM
 export NVM_LAZY_LOAD=true
 export NVM_COMPLETION=true
 
@@ -133,10 +134,6 @@ _evalcache rbenv init -
 # eval "$(rbenv init -)"
 
 export NVM_DIR="$HOME/.nvm"
-
-# Manage NVM
-export NVM_LAZY_LOAD=true
-export NVM_COMPLETION=true
 
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
