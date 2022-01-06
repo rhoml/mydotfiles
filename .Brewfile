@@ -74,6 +74,7 @@ brew 'wget'
 brew 'xz'
 brew 'zsh'
 brew 'zsh-completions'
+brew 'vale'
 
 # cask 'muzzle' # Not a fan but haven't decided if to permanently remove it
 cask 'cloudapp'
