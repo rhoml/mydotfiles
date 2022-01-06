@@ -31,6 +31,7 @@ DOTFILES = %w(
   zsh.d
   zshrc
   hammerspoon
+  envrc
 )
 
 desc %(Make symlinks of dotfiles)

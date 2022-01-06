@@ -3,12 +3,13 @@
 # zmodload zsh/zprof
 
 # Path to your oh-my-zsh configuration.
-export PATH="/usr/local/opt/coreutils/libexec/gnubin:/usr/local/opt/curl/bin:/Users/$USER/bin:/Users/$USER/.oh-my-zsh/bin:/Users/$USER/go/bin:~/bin/terraform:$PATH"
+export PATH="/usr/local/opt/coreutils/libexec/gnubin:/usr/local/opt/curl/bin:/Users/$USER/bin:/Users/$USER/.oh-my-zsh/bin:/Users/$USER/go/bin:~/bin/terraform:/opt/homebrew/Cellar/bind/9.16.23/bin:$HOME/.gem/ruby/3.0.0/bin:/Users/rhommel/.cargo/bin:$PATH"
 export ZSH_DISABLE_COMPFIX=false
 export ZSH=$HOME/.oh-my-zsh
 export TERM="xterm-256color"
 export LDFLAGS="-L/usr/local/opt/curl/lib"
 export CPPFLAGS="-I/usr/local/opt/curl/include"
+export CARGO_NET_GIT_FETCH_WITH_CLI=true
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -73,6 +74,7 @@ unset config_files
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(
+  evalcache
   bgnotify
   branch
   docker
@@ -82,7 +84,7 @@ plugins=(
   git
   golang
   jsontools
-  kubectl
+  #kubectl
   macos
   rbenv
   sudo
@@ -122,8 +124,19 @@ POWERLEVEL9K_BATTERY_LOW_COLOR="red"
 [ -f $ZSH/oh-my-zsh.sh ] && source $ZSH/oh-my-zsh.sh
 
 # Enable Rbenv for Rubies!
-eval "$(rbenv init -)"
-
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
 export NVM_DIR="$HOME/.nvm"
+
+# Manage NVM
+export NVM_LAZY_LOAD=true
+export NVM_COMPLETION=true
+
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Perf improvements
+#eval "$(rbenv init -)"
+_evalcache rbenv init -
+
+eval "$(direnv hook zsh)"
+#_evalcache direnv hook zsh
