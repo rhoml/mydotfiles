@@ -25,6 +25,7 @@ brew 'curl'
 brew 'dnsmasq', restart_service: :changed
 brew 'direnv'
 brew 'findutils'
+brew 'fig'
 brew 'gcc@5'
 brew 'gdbm'
 brew 'git'
