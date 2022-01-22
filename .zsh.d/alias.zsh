@@ -13,6 +13,5 @@ alias -s git="git clone" # No need to type `git clone` again
 alias myip4="dig -4 +short @one.one.one.one CH TXT whoami.cloudflare. | sed -e 's,\",,g'"
 alias myip6="dig -6 +short @one.one.one.one CH TXT whoami.cloudflare. | sed -e 's,\",,g'"
 alias afk="open -a /System/Library/CoreServices/ScreenSaverEngine.app"
-alias brew!="/usr/local/bin/brew bundle install -v --global"
 alias FlushDNS!="sudo killall -HUP mDNSResponder"
 alias pubkey="cat ~/.ssh/id_ed25519.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
