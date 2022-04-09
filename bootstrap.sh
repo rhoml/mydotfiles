@@ -20,7 +20,7 @@ fi
 # Validate Homebrew is installed
 if [ ! $(which brew) ]; then
     echo "Installing Homebrew..."
-    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
 # Validate .oh-my-zsh is present
