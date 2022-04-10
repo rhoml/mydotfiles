@@ -79,6 +79,7 @@ brew 'vale'
 
 # cask 'muzzle' # Not a fan but haven't decided if to permanently remove it
 cask 'cloudapp'
+cask 'cloudflare-warp'
 cask 'docker'
 cask 'drop-to-gif'
 cask 'dropbox'

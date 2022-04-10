@@ -4,7 +4,6 @@ set -e
 
 WHOAMI=$(whoami)
 SPACEMACS_DIR="/Users/${WHOAMI}/.emacs.d"
-OH_MY_ZSH_DIR="/Users/${WHOAMI}/.oh-my-zsh"
 TMUX_TPM_DIR="/Users/${WHOAMI}/.tmux/plugins/tpm"
 ZSH_CUSTOM_THEMES_DIR="/Users/${WHOAMI}/.oh-my-zsh/custom/themes/powerlevel9k"
 ZSH_CUSTOM_PLUGINS_DIR="/Users/${WHOAMI}/.oh-my-zsh/custom/plugins"
@@ -26,7 +25,7 @@ fi
 # Validate .oh-my-zsh is present
 if [ ! -d ${OH_MY_ZSH_DIR} ]; then
     echo "Installing oh-my-zsh..."
-    git clone git://github.com/robbyrussell/oh-my-zsh.git ${OH_MY_ZSH_DIR}
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 fi
 
 # Validate .oh-my-zsh custom theme is present
