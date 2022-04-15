@@ -31,7 +31,6 @@ DOTFILES = %w(
   zsh.d
   zshrc
   hammerspoon
-  vale.ini
 )
 
 desc %(Make symlinks of dotfiles)
