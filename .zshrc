@@ -6,6 +6,7 @@
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:/usr/local/opt/curl/bin:/Users/$USER/bin:/Users/$USER/.oh-my-zsh/bin:/Users/$USER/go/bin:~/bin/terraform:/opt/homebrew/Cellar/bind/9.16.23/bin:/opt/homebrew/bin:$HOME/.gem/ruby/3.0.0/bin:/Users/$USER/.cargo/bin:$PATH"
 export ZSH_DISABLE_COMPFIX=false
 export ZSH=$HOME/.oh-my-zsh
+export ZSH_CUSTOM=$HOME/.oh-my-zsh/custom
 export TERM="xterm-256color"
 export LDFLAGS="-L/usr/local/opt/curl/lib"
 export CPPFLAGS="-I/usr/local/opt/curl/include"
@@ -25,7 +26,7 @@ export NVM_COMPLETION=true
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="powerlevel9k/powerlevel9k"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
@@ -106,15 +107,20 @@ plugins=(
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(battery dir rbenv vcs)
 
 # Elements options of right prompt
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history time)
-# POWERLEVEL9K_HOME_ICON=''
+# POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history time)
+# POWERLEVEL9K_HOME_ICON='🏠'
 # POWERLEVEL9K_FOLDER_ICON='📁'
 # POWERLEVEL9K_HOME_SUB_ICON='📂'
 # POWERLEVEL9K_ETC_ICON='⚙️'
 
 # Change prompt use two lines
+# POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+# POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX=" %f"
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
-POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX=" %f"
+POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="\n "
+POWERLEVEL9K_MULTILINE_SECOND_PROMPT_PREFIX=">"
+
+
 
 # Customizations for second line
 local user_symbol="$"
@@ -147,3 +153,5 @@ _evalcache rbenv init -
 
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+#source /opt/homebrew/opt/powerlevel10k/powerlevel10k.zsh-theme
