@@ -1,0 +1,155 @@
+{
+    "[html]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[yaml]": {
+      "editor.formatOnSave": false,
+      "editor.defaultFormatter": "redhat.vscode-yaml",
+      "editor.quickSuggestions": {
+        "comments": false,
+        "other": true,
+        "strings": true
+      },
+      "editor.tabSize": 2
+    },
+    "yaml.format.bracketSpacing": false,
+    "breadcrumbs.enabled": true,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.insertSpaces": false,
+    "editor.minimap.enabled": false,
+    "editor.minimap.renderCharacters": false,
+    "editor.parameterHints.enabled": false,
+    "editor.quickSuggestions": {
+      "comments": true,
+      "other": true,
+      "strings": true
+    },
+    "editor.renderLineHighlight": "none",
+    "editor.renderWhitespace": "none",
+    "editor.scrollbar.verticalScrollbarSize": 8,
+    "editor.snippetSuggestions": "bottom",
+    "editor.suggest.localityBonus": true,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "on",
+    "editor.tabSize": 2,
+    "editor.tokenColorCustomizations": {
+      "[Nord]": {
+        "comments": "#616e88"
+      }
+    },
+    "editor.wordBasedSuggestionsMode": "currentDocument",
+    "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+    "editor.wordWrap": "on",
+    "emmet.showExpandedAbbreviation": "never",
+    "eslint.codeActionsOnSave.mode": "problems",
+    "eslint.codeActionsOnSave.rules": [],
+    "eslint.format.enable": true,
+    "eslint.rules.customizations": [
+      {
+        "rule": "*",
+        "severity": "warn"
+      }
+    ],
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "extensions.ignoreRecommendations": true,
+    "files.associations": {
+      "*.mjml": "handlebars",
+      ".env.local": "shellscript"
+    },
+    "files.exclude": {
+      "**/.next": true,
+      "**/node_modules": true,
+      "**/yarn.lock": true
+    },
+    "files.watcherExclude": {
+      "**/.git/objects/**": true,
+      "**/.git/subtree-cache/**": true,
+      "**/node_modules/*/**": true
+    },
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "git.enableSmartCommit": true,
+    "git.path": "/opt/homebrew/bin/git",
+    "gitlens.codeLens.authors.enabled": false,
+    "gitlens.codeLens.recentChange.enabled": false,
+    "gitlens.menus": {
+      "editor": {
+        "blame": false,
+        "clipboard": true,
+        "compare": true,
+        "history": false,
+        "remote": false
+      },
+      "editorGroup": false,
+      "editorTab": {
+        "clipboard": true,
+         "compare": true,
+        "history": true,
+        "remote": true
+      },
+      "explorer": {
+        "clipboard": true,
+        "compare": true,
+        "history": true,
+        "remote": true
+      },
+      "scm": {
+        "authors": true
+      },
+      "scmGroup": {
+        "compare": true,
+        "openClose": true,
+        "stash": true
+      },
+      "scmGroupInline": {
+        "stash": true
+      },
+      "scmItem": {
+        "clipboard": true,
+        "compare": true,
+        "history": true,
+        "remote": false,
+        "stash": true
+      }
+    },
+    "gitlens.statusBar.enabled": false,
+    "javascript.suggest.completeJSDocs": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "markdown.preview.fontSize": 13,
+    "pgFormatter.spaces": 2,
+    "php.suggest.basic": false,
+    "references.preferredLocation": "view",
+    "rest-client.enableTelemetry": false,
+    "rest-client.fontSize": 12,
+    "scrolloff.scrolloff": 5,
+    "search.exclude": {
+      "**/*.js.snap": true,
+      "**/*.ts.snap": true,
+      "**/yaml.lock": true
+    },
+    "security.workspace.trust.untrustedFiles": "open",
+    "telemetry.telemetryLevel": "off",
+    "terminal.external.osxExec": "iTerm.app",
+    "terminal.integrated.fontWeight": "400",
+    "terminal.integrated.fontWeightBold": "normal",
+    "typescript.disableAutomaticTypeAcquisition": true,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "vscode-graphql.showExecCodelens": false,
+    "workbench.activityBar.visible": false,
+    "editor.foldingImportsByDefault": true,
+    "editor.lineHeight": 1.2,
+    "redhat.telemetry.enabled": false
+  }
