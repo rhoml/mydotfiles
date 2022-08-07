@@ -414,7 +414,7 @@ sudo mdutil -E / > /dev/null
 ###############################################################################
 
 # Only use UTF-8 in Terminal.app
-#defaults write com.apple.terminal StringEncodings -array 4
+defaults write com.apple.terminal StringEncodings -array 4
 
 # Use a modified version of the Solarized Dark theme by default in Terminal.app
 # osascript <<EOD
@@ -480,7 +480,7 @@ sudo mdutil -E / > /dev/null
 # open "${HOME}/init/Solarized Dark.itermcolors"
 
 # Don’t display the annoying prompt when quitting iTerm
-# #defaults write com.googlecode.iterm2 PromptOnQuit -bool false
+defaults write com.googlecode.iterm2 PromptOnQuit -bool false
 
 ###############################################################################
 # Time Machine                                                                #
@@ -517,7 +517,7 @@ defaults write com.apple.ActivityMonitor SortDirection -int 0
 defaults write com.apple.addressbook ABShowDebugMenu -bool true
 
 # Enable Dashboard dev mode (allows keeping widgets on the desktop)
-#defaults write com.apple.dashboard devmode -bool true
+defaults write com.apple.dashboard devmode -bool true
 
 # Enable the debug menu in iCal (pre-10.8)
 defaults write com.apple.iCal IncludeDebugMenu -bool true
