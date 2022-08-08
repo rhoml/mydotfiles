@@ -148,7 +148,7 @@
     "typescript.disableAutomaticTypeAcquisition": true,
     "typescript.updateImportsOnFileMove.enabled": "always",
     "vscode-graphql.showExecCodelens": false,
-    "workbench.activityBar.visible": false,
+    "workbench.activityBar.visible": true,
     "editor.foldingImportsByDefault": true,
     "editor.lineHeight": 1.2,
     "redhat.telemetry.enabled": false
